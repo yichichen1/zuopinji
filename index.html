@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="杜治龙 · 产品设计作品集">
+  <title>杜治龙 · 产品设计作品集</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#top">
+      <span class="brand-cn" id="brand-cn">杜治龙</span>
+      <span class="brand-en" id="brand-en">DU ZHILONG</span>
+    </a>
+    <nav class="site-nav">
+      <a href="#index">展览目录</a>
+      <a href="#works">作品</a>
+      <a href="#about">关于</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- 展览主视觉 -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <p class="hero-school" id="hero-school"></p>
+          <h1 class="hero-title">
+            <span class="hero-title-cn">产品设计作品集</span>
+            <span class="hero-title-en">PRODUCT DESIGN PORTFOLIO</span>
+          </h1>
+          <p class="hero-tagline" id="hero-tagline"></p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#works">进入展厅</a>
+            <a class="btn btn-line" href="#about">关于作者</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <figure class="hero-figure">
+            <img id="hero-cover" src="" alt="作品集封面">
+            <figcaption id="hero-figcaption"></figcaption>
+          </figure>
+        </div>
+      </div>
+      <!-- 展览信息条 -->
+      <div class="hero-strip" id="hero-strip"></div>
+    </section>
+
+    <!-- 展览目录 -->
+    <section class="section" id="index">
+      <div class="section-head">
+        <span class="section-num">INDEX</span>
+        <h2 class="section-title">展览目录 <span class="section-title-en">CONTENTS</span></h2>
+        <p class="section-note">点击任意条目进入作品</p>
+      </div>
+      <div class="catalog" id="catalog"></div>
+    </section>
+
+    <!-- 主要作品 -->
+    <section class="section" id="works">
+      <div class="section-head">
+        <span class="section-num">WORKS</span>
+        <h2 class="section-title">主要作品 <span class="section-title-en">SELECTED WORKS</span></h2>
+        <p class="section-note">点击展品卡片查看完整设计过程</p>
+      </div>
+      <div class="works-grid" id="works-grid"></div>
+    </section>
+
+    <!-- 其他设计 -->
+    <section class="section" id="others">
+      <div class="section-head">
+        <span class="section-num">EXTRA</span>
+        <h2 class="section-title">其他设计 <span class="section-title-en">OTHER DESIGNS</span></h2>
+        <p class="section-note" id="others-note"></p>
+      </div>
+      <figure class="section-banner">
+        <img id="others-banner" src="" alt="其他设计">
+      </figure>
+      <div class="others-grid" id="others-grid"></div>
+    </section>
+
+    <!-- 关于作者 -->
+    <section class="section" id="about">
+      <div class="section-head">
+        <span class="section-num">ABOUT</span>
+        <h2 class="section-title">关于作者 <span class="section-title-en">PROFILE</span></h2>
+      </div>
+
+      <div class="about-top">
+        <p class="about-intro" id="about-intro"></p>
+        <figure class="about-figure">
+          <img id="profile-image" src="" alt="作者页">
+        </figure>
+      </div>
+
+      <div class="block">
+        <h3 class="block-title">教育背景 <span>EDUCATION</span></h3>
+        <div class="edu" id="education"></div>
+      </div>
+
+      <div class="block">
+        <h3 class="block-title">项目经历 <span>PROJECT EXPERIENCE</span></h3>
+        <div class="timeline" id="experiences"></div>
+      </div>
+
+      <div class="block">
+        <h3 class="block-title">校园经历 <span>CAMPUS</span></h3>
+        <div class="timeline" id="campus"></div>
+      </div>
+
+      <div class="block">
+        <h3 class="block-title">技能特长 <span>SKILLS</span></h3>
+        <div class="skills" id="skills"></div>
+      </div>
+
+      <div class="block">
+        <h3 class="block-title">荣誉奖项 <span>HONORS</span></h3>
+        <ul class="honors" id="honors"></ul>
+      </div>
+
+      <div class="block">
+        <h3 class="block-title">自我评价 <span>SELF-ASSESSMENT</span></h3>
+        <div class="evals" id="evals"></div>
+      </div>
+    </section>
+
+    <!-- 联系 -->
+    <section class="section contact" id="contact">
+      <div class="section-head">
+        <span class="section-num">CONTACT</span>
+        <h2 class="section-title">保持联系 <span class="section-title-en">GET IN TOUCH</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-text">
+          <p class="contact-lead">有合作意向或交流想法，欢迎随时联系我。</p>
+          <p class="contact-label">个人邮箱 <span>EMAIL</span></p>
+          <a class="contact-email" id="contact-email" href=""></a>
+          <dl class="contact-facts" id="contact-facts"></dl>
+        </div>
+        <figure class="contact-figure">
+          <img id="contact-image" src="" alt="感谢观看">
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p id="footer-line"></p>
+  </footer>
+
+  <!-- 作品详情弹窗 -->
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-panel" role="dialog" aria-modal="true">
+      <div class="lightbox-bar">
+        <div class="lightbox-title">
+          <span class="lightbox-num" id="lb-num"></span>
+          <div class="lightbox-meta">
+            <h3 id="lb-title"></h3>
+            <p id="lb-meta"></p>
+          </div>
+        </div>
+        <button class="lightbox-close" id="lb-close" aria-label="关闭">✕</button>
+      </div>
+      <div class="lightbox-stage" id="lb-stage">
+        <img id="lb-image" src="" alt="">
+      </div>
+      <div class="lightbox-foot">
+        <button class="lb-arrow" id="lb-prev" aria-label="上一张">←</button>
+        <p class="lb-counter" id="lb-counter"></p>
+        <button class="lb-arrow" id="lb-next" aria-label="下一张">→</button>
+      </div>
+      <p class="lb-caption" id="lb-caption"></p>
+    </div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
